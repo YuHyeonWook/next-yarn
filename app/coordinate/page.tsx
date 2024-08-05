@@ -1,4 +1,4 @@
-import { getCurrentCoordinate } from '@/api/accommodations/getCurrentTime';
+import { getCurrentCoordinate } from '@/api/time/getCurrentTime';
 
 export default async function Coordinate() {
   const latitude = 38.9;

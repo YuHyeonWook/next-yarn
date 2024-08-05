@@ -1,4 +1,4 @@
-import { baseURL } from './baseURL';
+import { baseURL } from '@/api/baseURL';
 
 export async function getCurrentZone(timezone: string) {
   try {

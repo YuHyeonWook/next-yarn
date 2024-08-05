@@ -1,4 +1,4 @@
-import { getCurrentZone } from '@/api/accommodations/getCurrentTime';
+import { getCurrentZone } from '@/api/time/getCurrentTime';
 import Link from 'next/link';
 
 export default async function Home() {

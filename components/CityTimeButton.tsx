@@ -1,5 +1,5 @@
 'use client';
-import { getCurrentCoordinate } from '@/api/accommodations/getCurrentTime';
+import { getCurrentCoordinate } from '@/api/time/getCurrentTime';
 import { useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
 
@@ -47,6 +47,7 @@ export const CityTimeButton = ({
           <p>Timezone: {data.timeZone}</p>
         </div>
       )}
+      {isError && <p className="text-red-500">Error fetching data</p>}
     </div>
   );
 };
