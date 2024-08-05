@@ -3,7 +3,8 @@
     "next/core-web-vitals",
     "airbnb",
     "airbnb-typescript",
-    "prettier"
+    "prettier",
+    "plugin:@tanstack/eslint-plugin-query/recommended"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
