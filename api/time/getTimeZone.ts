@@ -1,6 +1,6 @@
 import { baseURL } from '../baseURL';
 
-export async function getCurrentZone() {
+export async function getTimeZone() {
   try {
     const response = await fetch(`${baseURL}/api/TimeZone/AvailableTimeZones`, {
       method: 'GET'

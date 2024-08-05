@@ -25,7 +25,8 @@ export const CityTimeButton = ({
   const { data, isLoading, isError } = useQuery({
     queryKey: ['cityTime', latitude, longitude],
     queryFn: () => getCurrentCoordinate(latitude, longitude),
-    enabled
+    enabled,
+    staleTime: 1000 * 60
   });
 
   const handleClick = () => {
