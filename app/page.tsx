@@ -3,6 +3,7 @@ import { postConvertTimeZone } from '@/api/conversion/postConvertTimeZone';
 import { useMutation } from '@tanstack/react-query';
 import Link from 'next/link';
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   const [timeZoneData, setTimeZoneData] = useState(null);
@@ -30,6 +31,16 @@ export default function Home() {
   return (
     <>
       <h1>Current Time</h1>
+      <img
+        src="/profile.svg"
+        alt=""
+      />
+      <Image
+        width={500}
+        height={500}
+        src="/profile.svg"
+        alt=""
+      />
       <button
         className="border rounded bg-slate-300 p-1"
         onClick={handleConvertTimeZone}>
