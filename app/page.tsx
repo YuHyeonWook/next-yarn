@@ -35,12 +35,6 @@ export default function Home() {
         src="/profile.svg"
         alt=""
       />
-      <Image
-        width={500}
-        height={500}
-        src="/profile.svg"
-        alt=""
-      />
       <button
         className="border rounded bg-slate-300 p-1"
         onClick={handleConvertTimeZone}>
